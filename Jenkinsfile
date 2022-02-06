@@ -1,6 +1,5 @@
-pipeline{
-  agent any
-  parameters{
+node('main') {
+    parameters{
     string (name: 'keyname', defaultValue: 'terra', description: ' ')
     string (name: 'SecurityGroup', defaultValue: 'sg-0244e3f85210cc582', description: ' ')
     string (name: 'Subnet', defaultValue: 'subnet-04bb8948', description: ' ')
